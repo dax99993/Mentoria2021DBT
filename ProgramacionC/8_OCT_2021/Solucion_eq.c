@@ -37,8 +37,8 @@ int main(int argc, char *argv[])
 	// Evitar division entre 0 (esto gemeotricamente significa que las lineas son paralelas)
 	if( (a*e - b*d) != 0.0 ){
 		// Las lineas no son paralelas y se intersectaen el punto (x,y)
-		x = ( c*e - b*f ) / ( a*c - b*d );
-		y = ( a*f - c*d ) / ( a*c - b*d );
+		x = ( c*e - b*f ) / ( a*e - b*d );
+		y = ( a*f - c*d ) / ( a*e - b*d );
 		printf("La solucion (x,y) = (%f,%f)\n", x, y);
 	}
 	// En caso de que sean paralelas hay dos casos
