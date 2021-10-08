@@ -1,12 +1,26 @@
+/* Fecha: 8-OCT-21
+ *
+ * Crear un programa que indique 
+ * Cuánto se debe pagar a un trabajador a partir de las horas trabajadas en la semana. 
+ * El tabulador es el siguiente: 
+ *  1-40 horas = $50 pesos 
+ * 41-50 horas = $75.00 
+ * Se marcan como horas extras si se trabaja mas de 50 horas
+ * por cada hora superior a las 50 horas se paga $100 
+ *
+ * Author: Daniel B. T.
+ *
+ * */
+
 #include <stdio.h>
 
-// pago por hora si en la semana se trabajo de 1-40 horas
+// Pago por hora si en la semana se trabajo de 1-40 horas
 const float pago50 = 50.0;
 
-// pago por hora si en la semana se trabajo de 41-50 horas
+// Pago por hora si en la semana se trabajo de 41-50 horas
 const float pago75 = 75.0;
 
-// pago por hora extra si la semana se trabajo mas de 50 horas
+// Pago por hora extra si la semana se trabajo mas de 50 horas
 const float pagoHoraExtra = 100.0;
 
 
@@ -39,6 +53,7 @@ int main()
 			// Por cada hora extra se paga 100$
 			pagoExtra = horasExtras * pagoHoraExtra;
 			// Calcular horas quitando las extras (pago normal)
+			// (horasTrabajadas - horasExtras) siempre vale 50
 			pagoTotal = (horasTrabajadas - horasExtras) * pago75;
 			// Sumar el pago normal con el pago extra para obtener pago total
 			pagoTotal += pagoExtra;
