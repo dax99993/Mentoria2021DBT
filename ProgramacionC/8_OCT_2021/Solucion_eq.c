@@ -6,11 +6,11 @@
  * dx + ey = f
  *
  *
- * Si ac - bd == 0 entonces existen 2 casos
+ * Si ae - bd == 0 entonces existen 2 casos
  * 	si c != f entonces no existe solucion
  * 	si c == f entonces no existe una solucion unica (infinitas)
  *
- * Si ac -bd != 0 entonces existe una solucion unica (x,y)
+ * Si ae -bd != 0 entonces existe una solucion unica (x,y)
  * Dada por las formulas:
  *
  * 	x = (ce - bf) / ( ac- bd)
