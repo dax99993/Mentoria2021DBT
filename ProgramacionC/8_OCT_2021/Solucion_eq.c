@@ -7,14 +7,14 @@
  *
  *
  * Si ae - bd == 0 entonces existen 2 casos
- * 	si c != f entonces no existe solucion
- * 	si c == f entonces no existe una solucion unica (infinitas)
+ * 	if (a*f - c*d) == 0  y  (b*f - c*e) == 0 entonces "no existe una solucion unica (infinitas)"
+ * 	else "No existe solucion"  
  *
  * Si ae -bd != 0 entonces existe una solucion unica (x,y)
  * Dada por las formulas:
  *
- * 	x = (ce - bf) / ( ac- bd)
- * 	y = (af - cd) / ( ac- bd)
+ * 	x = (ce - bf) / ( ae - bd)
+ * 	y = (af - cd) / ( ae - bd)
  *
  * Autor: Daniel B. T.
  * */
